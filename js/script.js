@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
     const formMessage = document.getElementById('form-message');
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
 
     if (form) {
         form.addEventListener('submit', function (event) {
@@ -34,4 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     }
+
+    hamburger.addEventListener("click", () => {
+    // Adiciona/remove a classe 'active' do ícone
+    hamburger.classList.toggle("active");
+    // Adiciona/remove a classe 'active' da lista de links
+    navLinks.classList.toggle("active");
+});
+
 });
