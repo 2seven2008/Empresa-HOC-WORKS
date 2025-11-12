@@ -1,6 +1,6 @@
 const CACHE_HOC = 'hoc-works-cache';
 const urlsToCache = [
-    './',
+    '/',
     '/index.html',
     '/empresa.html',
     '/contato.html',
@@ -26,4 +26,5 @@ self.addEventListener('fetch', (event) => {
     );
 
 });
+
 
